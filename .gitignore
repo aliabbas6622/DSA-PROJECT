@@ -1,0 +1,11 @@
+/build/
+/graphx.exe
+/graph.svg
+/src/graph.svg
+/src/main.exe
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+*.o
+*.obj

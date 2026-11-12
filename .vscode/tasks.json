@@ -1,0 +1,43 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "GraphX: build",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++11",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-I",
+                "${workspaceFolder}\\include",
+                "-I",
+                "${workspaceFolder}\\ui",
+                "${workspaceFolder}\\src\\main.cpp",
+                "${workspaceFolder}\\src\\Expression.cpp",
+                "${workspaceFolder}\\src\\ExpressionParser.cpp",
+                "${workspaceFolder}\\src\\EvaluationCache.cpp",
+                "${workspaceFolder}\\src\\EquationHistory.cpp",
+                "${workspaceFolder}\\src\\GraphSampler.cpp",
+                "${workspaceFolder}\\ui\\ConsoleApp.cpp",
+                "${workspaceFolder}\\ui\\SvgRenderer.cpp",
+                "-o",
+                "${workspaceFolder}\\graphx.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Builds the GraphX core and separate UI layer."
+        }
+    ],
+    "version": "2.0.0"
+}
